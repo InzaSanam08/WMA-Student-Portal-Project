@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>📝 Student Registration</h2>
+      <p class="subtitle">Fill your details carefully</p>
+
+      <input type="text" id="name" placeholder="Full Name">
+
+      <!-- Class Timings Dropdown -->
+      <select id="timings">
+        <option value="">Select Class Timings</option>
+        <option value="9am - 12pm">9am - 12pm</option>
+        <option value="1pm - 4pm">1pm - 4pm</option>
+        <option value="5pm - 8pm">5pm - 8pm</option>
+      </select>
+
+      <!-- Campus Dropdown -->
+      <select id="campus">
+        <option value="">Select Campus</option>
+        <option value="Malir Campus">Malir Campus</option>
+        <option value="North Campus">North Campus</option>
+        <option value="Bahadur Abad Campus">Bahadur Abad Campus</option>
+      </select>
+
+      <!-- Teacher Dropdown -->
+      <select id="teacher">
+        <option value="">Select Teacher</option>
+        <option value="Minahil Irfan">Minahil Irfan</option>
+        <option value="Naeema Rafiq">Naeema Rafiq</option>
+        <option value="Minahil Jameel">Minahil Jameel</option>
+      </select>
+
+      <!-- Course Dropdown -->
+      <select id="course">
+        <option value="">Select Course</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Mobile App Development">Mobile App Development</option>
+        <option value="Data Science">Data Science</option>
+      </select>
+
+      <button class="btn" id="saveBtn">Save & Continue</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script> -->
+
+  <!-- App Logic -->
+  <script type="module" src="register.js"></script>
+</body>
+</html>
+
