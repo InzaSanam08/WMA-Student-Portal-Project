@@ -3,12 +3,11 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 // Firebase Config
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyDIQE2YI1X_6odqLB4cEG9KDYO0O3YRwfg",
   authDomain: "wma-loginsignup-project.firebaseapp.com",
   projectId: "wma-loginsignup-project",
-  storageBucket: "wma-loginsignup-project.appspot.com",  // ✅ fixed
+  storageBucket: "wma-loginsignup-project.appspot.com", 
   messagingSenderId: "484491310617",
   appId: "1:484491310617:web:af7733cd49c7cafc16dc88",
   measurementId: "G-0CMFR093LC"

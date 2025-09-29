@@ -6,12 +6,11 @@ import { getFirestore, doc, setDoc, getDoc }
   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 // Your Firebase Project Config
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyDIQE2YI1X_6odqLB4cEG9KDYO0O3YRwfg",
   authDomain: "wma-loginsignup-project.firebaseapp.com",
   projectId: "wma-loginsignup-project",
-  storageBucket: "wma-loginsignup-project.appspot.com",  // ✅ fixed
+  storageBucket: "wma-loginsignup-project.appspot.com", 
   messagingSenderId: "484491310617",
   appId: "1:484491310617:web:af7733cd49c7cafc16dc88",
   measurementId: "G-0CMFR093LC"
@@ -75,4 +74,31 @@ export async function loadProfile(uid) {
     console.log("No profile found!");
     return null;
   }
+}
+// 
+// Loader
+function showLoader() {
+  document.getElementById("loader").style.display = "flex";
+}
+function hideLoader() {
+  document.getElementById("loader").style.display = "none";
+}
+
+// Toast
+function showToast(message, type="success") {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+
+  if (type === "error") {
+    toast.style.background = "#e74c3c";
+  } else if (type === "warning") {
+    toast.style.background = "#f39c12";
+  } else {
+    toast.style.background = "#2ecc71";
+  }
+
+  toast.classList.add("show");
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
 }
